@@ -39,6 +39,7 @@ class Queue {
     let peekNode = this.head;
     peekNode.next = null;
     console.log(peekNode);
+    return peekNode;
   }
 
 
