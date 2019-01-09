@@ -10,13 +10,13 @@ class BinarySearchTree {
   }
 
   add(value) {
-    const node = this.root;
+    let node = this.root;
     if(node === null) {
       this.root = new Node(value);
       return;
     }
 
-    const _insert = node => {
+    let _insert = node => {
       if(value < node.value) {
         if(node.left === null) {
           node.left = new Node(value);
