@@ -10,8 +10,8 @@ const stuff = {
 let state = {people, stuff};
 
 let newPeople = ['Odie', ...people, 'Garfield'];
-const newStuff = {...stuff, cars:[...stuff.cars, 'Nova']};
-let newState = {people:['Odie',...people,'Garfield'], stuff:{...stuff, cars:[...stuff.cars,'Nova']}};
+const newStuff = {...stuff, cars:[...stuff.cars, 'Thing']};
+let newState = {people:['Odie', ...people, 'Garfield'], stuff:{...stuff, cars:[...stuff.cars, 'Thing']}};
 
 console.log({people});
 console.log({stuff});

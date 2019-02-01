@@ -2,26 +2,25 @@
 
 let BinarySearchTree = require('../tree.js');
 let tree = new BinarySearchTree();
-let values = [50,25,75,12,37,62,87,1,100];
+let values = [50,75,24,12,37,63,88,6,18,30,43,55,67,90];
 
-let pine = values.map(value => tree.add(value));
+let elm = values.map(value => tree.add(value));
 
-let preOrder = tree.preOrder(pine);
+let preOrder = tree.preOrder(elm);
 console.log('preOrder', preOrder);
 
-let postOrder = tree.postOrder(pine);
+let postOrder = tree.postOrder(elm);
 console.log('postOrder', postOrder);
 
-let inOrder = tree.inOrder(pine);
+let inOrder = tree.inOrder(elm);
 console.log('inOrder', inOrder);
 
-let breadthFirst = tree.breadthFirst(pine);
+let breadthFirst = tree.breadthFirst(elm);
 console.log('breadthFirst', breadthFirst);
 
-let findMaxValue = tree.findMaximumValue(pine);
+let findMaxValue = tree.findMaxValue(elm);
 console.log('findMaxValue', findMaxValue);
 
-let search = tree.search(37);
+let search = tree.search(43);
 console.log('search', search);
-
 
